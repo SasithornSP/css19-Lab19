@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+background-color: skyblue;
+min-height: 50px;
+display: flex;
+gap: 4PX;
+justify-content: flex-end;
+align-items: flex-end;
+padding: 8px;
+}
+nav a {
+    text-decoration: none;
+    background-color: palevioletred;
+    color: antiquewhite;
+    padding: 4PX;
+    font-size: 20PX;
+    border-radius: 8PX;
+
+}
+@media(max-width:800px) {
+    nav {
+        justify-content: space-around;
+    }
+    nav a {
+        flex-basis: 100%;
+        text-align: center;
+
+    }
+}
+
+@media (max-width:600px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
